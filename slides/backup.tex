@@ -80,3 +80,139 @@
   \centering
   \small \textit{Traditional class inheritance creates rigid hierarchies}
 \end{frame}
+
+
+%%%%
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{Traditional OOP Approach}
+  \framesubtitle{Shitty Inheritance Hierarchy}
+  
+  \begin{columns}[c]
+    \begin{column}{0.4\textwidth}
+      \centering
+      \includegraphics[width=0.9\textwidth]{cow.png}
+    \end{column}
+
+    \begin{column}{0.8\textwidth}
+      
+      \resizebox{7cm}{!}{
+
+      \begin{tikzpicture}[
+        node distance=4.5cm and 2cm,
+        class/.style={rectangle, draw, fill=blue!10, text width=2.2cm, align=center, minimum height=0.8cm, font=\small},
+        arrow/.style={->, >=stealth, thick}
+      ]
+        % Top level
+        \node[class, fill=blue!20] (entity) {\textbf{Entity}};
+        
+        % Second level
+        \node[class, fill=green!20, below left of=entity] (animal) {\textbf{Animal}};
+        \node[class, fill=green!20, below right of=entity] (object) {\textbf{Object}};
+        
+        % Third level - under Animal
+        \node[class, fill=orange!20, below left of=animal, xshift=-0.5cm] (cow) {\textbf{Cow}};
+        \node[class, fill=orange!20, below right of=animal, xshift=0.5cm] (dog) {\textbf{Dog}};
+        
+        % Third level - under Object
+        \node[class, fill=orange!20, right of=dog, below of=object ] (tree) {\textbf{Tree}};
+        
+        % Arrows
+        \draw[arrow] (animal) -- (entity);
+        \draw[arrow] (object) -- (entity);
+        \draw[arrow] (cow) -- (animal);
+        \draw[arrow] (dog) -- (animal);
+        \draw[arrow] (tree) -- (object);
+      \end{tikzpicture}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+
+
+
+
+
+
+% poo
+\begin{frame}
+  \begin{columns}[c]
+
+    
+    \begin{column}{0.3\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{cow.png}
+    \end{column}
+
+    \begin{column}{0.8\textwidth}
+      \centering
+      \resizebox{3cm}{!}{
+      \begin{tikzpicture}[
+        node distance=2.5cm,
+        class/.style={rectangle, draw, fill=blue!10, text width=3cm, align=left, minimum height=1cm},
+        arrow/.style={->, >=stealth, thick}
+      ]
+        % Entity
+        \node[class, fill=blue!20] (entity) {\textbf{Entity}\\[0.1cm]\small ID: 42};
+        
+        % Components
+        \node[class, fill=green!20, below of=entity] (animal) {\textbf{Animal}\\[0.1cm]\small};
+        \node[class, fill=green!20, below of=animal] (cow) {\textbf{Cow}\\[0.1cm]\small};
+                
+        % Arrows
+        \draw[arrow] (entity) -- (animal) node[midway, right, draw=none]{};
+        \draw[arrow] (animal) -- (cow) node[midway, right, draw=none]{};
+        
+      \end{tikzpicture}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+% end poo
+
+
+
+\begin{frame}
+  \frametitle{ECS Architecture}
+  \framesubtitle{Example: A Cow Entity}
+  
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \begin{tikzpicture}[
+        node distance=1.5cm,
+        class/.style={rectangle, draw, fill=blue!10, text width=3cm, align=center, minimum height=1cm},
+        arrow/.style={->, >=stealth, thick}
+      ]
+        % Entity
+        \node[class, fill=blue!20] (entity) {\textbf{Entity}\\[0.1cm]\small ID: 42};
+        
+        % Components
+        \node[class, fill=green!20, below of=entity] (animal) {\textbf{Animal Component}\\[0.1cm]\small species: "Cow"\\age: 3};
+        
+        \node[class, fill=green!20, below of=animal] (transform) {\textbf{Transform}\\[0.1cm]\small position: (10, 5)\\rotation: 0°};
+        
+        \node[class, fill=green!20, below of=transform] (sprite) {\textbf{Sprite}\\[0.1cm]\small texture: "cow.png"};
+        
+        % Arrows
+        \draw[arrow] (entity) -- (animal) node[midway, right, draw=none] {\tiny has};
+        \draw[arrow] (entity) -- (transform);
+        \draw[arrow] (entity) -- (sprite);
+      \end{tikzpicture}
+    \end{column}
+    
+    \begin{column}{0.4\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{cow.png}
+      
+      \vspace{0.5cm}
+      \small \textit{A cow entity is composed of multiple components that define its data}
+    \end{column}
+  \end{columns}
+\end{frame}

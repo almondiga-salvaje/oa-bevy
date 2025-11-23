@@ -48,24 +48,20 @@
   \titlepage
 \end{frame}
 
-% --------------------------------------------------------------------
-% TABLE OF CONTENTS
-% --------------------------------------------------------------------
-% Uncomment the following frame to show an outline at the beginning.
-% \begin{frame}{Outline}
-%   \tableofcontents
-% \end{frame}
 
-% --------------------------------------------------------------------
-% SECTIONS AND FRAMES
-% --------------------------------------------------------------------
 \AtBeginSection[]
+{
+  \begin{frame}{Where am I?}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\AtBeginSubsection[]
 {
   \begin{frame}{Outline}
     \tableofcontents[currentsection,currentsubsection]
   \end{frame}
 }
-
 \section{What is Bevy?}
 % make me a slide with bevy logo and some text about bevy
 \begin{frame}{What is Bevy?}
@@ -98,6 +94,17 @@
 \end{frame}
 \begin{frame}{Why not use Godot or Unity?}
   \frametitle{Bevy vs Other Engines}
+
+    \begin{center}
+    \begin{tabular}{ccc}
+      \includegraphics[width=0.25\textwidth]{godot-logo.png} &
+      \includegraphics[width=0.25\textwidth]{unity-logo.png} &
+      \includegraphics[width=0.25\textwidth]{unreal-engine-logo.png} \\
+      \href{https://godotengine.org/}{Godot} &
+      \href{https://unity.com/}{Unity} &
+      \href{https://www.unrealengine.com/}{Unreal Engine}
+    \end{tabular}
+  \end{center}
   \begin{itemize}
     \item \textbf{Lightweight}: Lightweight compared to larger engines.
     \item \textbf{Flexibility}: More control over low-level systems and architecture.
@@ -155,11 +162,10 @@
   \end{columns}
 \end{frame}
 
+\subsection{Imagine that you have a cow (Conceptual Example)}
 \begin{frame}
-  \includegraphics[width=0.5\textwidth]{cow.png} % Placeholder for an image illustrating ECS  
+  \includegraphics[width=0.4\textwidth]{cow.png} % Placeholder for an image illustrating ECS  
 \end{frame}
-
-
 
 \begin{frame}
   \frametitle{Traditional OOP Approach}
@@ -172,128 +178,80 @@
     \end{column}
 
     \begin{column}{0.8\textwidth}
-      
-      \resizebox{7cm}{!}{
+      \resizebox{0.8\textwidth}{!}{
 
-      \begin{tikzpicture}[
-        node distance=4.5cm and 2cm,
-        class/.style={rectangle, draw, fill=blue!10, text width=2.2cm, align=center, minimum height=0.8cm, font=\small},
-        arrow/.style={->, >=stealth, thick}
-      ]
-        % Top level
-        \node[class, fill=blue!20] (entity) {\textbf{Entity}};
-        
-        % Second level
-        \node[class, fill=green!20, below left of=entity] (animal) {\textbf{Animal}};
-        \node[class, fill=green!20, below right of=entity] (object) {\textbf{Object}};
-        
-        % Third level - under Animal
-        \node[class, fill=orange!20, below left of=animal, xshift=-0.5cm] (cow) {\textbf{Cow}};
-        \node[class, fill=orange!20, below right of=animal, xshift=0.5cm] (dog) {\textbf{Dog}};
-        
-        % Third level - under Object
-        \node[class, fill=orange!20, right of=dog, below of=object ] (tree) {\textbf{Tree}};
-        
-        % Arrows
-        \draw[arrow] (animal) -- (entity);
-        \draw[arrow] (object) -- (entity);
-        \draw[arrow] (cow) -- (animal);
-        \draw[arrow] (dog) -- (animal);
-        \draw[arrow] (tree) -- (object);
+        \begin{tikzpicture}[
+          node distance=3.5cm and 1cm,
+          class/.style={rectangle, draw, fill=blue!10, minimum width=2.5cm, minimum height=1.2cm, align=center, font=\small},
+          arrow/.style={->, >=stealth, thick}
+        ]
+          % Top level
+          \node[class, fill=blue!20] (entity) {\textbf{Entity}};
+          
+          % Second level
+          \node[class, fill=green!20, below left of=entity] (animal) {\textbf{Animal}};
+          \node[class, fill=green!20, below right of=entity] (object) {\textbf{Object}};
+          
+          % Third level - under Animal
+          \node[class, fill=orange!20, below left of=animal, xshift=-0.5cm] (cow) {\textbf{Cow}};
+          \node[class, fill=orange!20, below right of=animal, xshift=0.5cm] (dog) {\textbf{Dog}};
+          
+          % Third level - under Object
+          \node[class, fill=orange!20, below of=object, yshift=-0.5cm] (tree) {\textbf{Tree}};
+          \node[class, fill=orange!20, below of=object, yshift=-2.5cm] (person) {\textbf{Person}};
+          
+          % Arrows
+          \draw[arrow] (animal) -- (entity);
+          \draw[arrow] (object) -- (entity);
+          \draw[arrow] (cow) -- (animal);
+          \draw[arrow] (dog) -- (animal);
       \end{tikzpicture}
       }
     \end{column}
   \end{columns}
-      
-  %\vspace{0.3cm}
-  %\centering
-  %\small \textit{Traditional class inheritance creates rigid hierarchies}
 \end{frame}
 
 
 
-
-
-
-
-
-
-% poo
 \begin{frame}
+  \frametitle{ECS Approach}
+  \framesubtitle{Nice and Clean Composition}
   \begin{columns}[c]
-
-    
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
       \centering
-      \includegraphics[width=1\textwidth]{cow.png}
+      \includegraphics[width=0.9\textwidth]{cow.png}
     \end{column}
 
     \begin{column}{0.8\textwidth}
-      \centering
-      \resizebox{3cm}{!}{
-      \begin{tikzpicture}[
-        node distance=2.5cm,
-        class/.style={rectangle, draw, fill=blue!10, text width=3cm, align=left, minimum height=1cm},
-        arrow/.style={->, >=stealth, thick}
-      ]
-        % Entity
-        \node[class, fill=blue!20] (entity) {\textbf{Entity}\\[0.1cm]\small ID: 42};
-        
-        % Components
-        \node[class, fill=green!20, below of=entity] (animal) {\textbf{Animal}\\[0.1cm]\small};
-        \node[class, fill=green!20, below of=animal] (cow) {\textbf{Cow}\\[0.1cm]\small};
-                
-        % Arrows
-        \draw[arrow] (entity) -- (animal) node[midway, right, draw=none]{};
-        \draw[arrow] (animal) -- (cow) node[midway, right, draw=none]{};
-        
-      \end{tikzpicture}
-      }
-    \end{column}
-  \end{columns}
-\end{frame}
-% end poo
-
-
-
-\begin{frame}
-  \frametitle{ECS Architecture}
-  \framesubtitle{Example: A Cow Entity}
-  
-  \begin{columns}[c]
-    \begin{column}{0.55\textwidth}
-      \begin{tikzpicture}[
-        node distance=1.5cm,
-        class/.style={rectangle, draw, fill=blue!10, text width=3cm, align=center, minimum height=1cm},
-        arrow/.style={->, >=stealth, thick}
-      ]
-        % Entity
-        \node[class, fill=blue!20] (entity) {\textbf{Entity}\\[0.1cm]\small ID: 42};
-        
-        % Components
-        \node[class, fill=green!20, below of=entity] (animal) {\textbf{Animal Component}\\[0.1cm]\small species: "Cow"\\age: 3};
-        
-        \node[class, fill=green!20, below of=animal] (transform) {\textbf{Transform}\\[0.1cm]\small position: (10, 5)\\rotation: 0°};
-        
-        \node[class, fill=green!20, below of=transform] (sprite) {\textbf{Sprite}\\[0.1cm]\small texture: "cow.png"};
-        
-        % Arrows
-        \draw[arrow] (entity) -- (animal) node[midway, right, draw=none] {\tiny has};
-        \draw[arrow] (entity) -- (transform);
-        \draw[arrow] (entity) -- (sprite);
-      \end{tikzpicture}
-    \end{column}
-    
-    \begin{column}{0.4\textwidth}
-      \centering
-      \includegraphics[width=0.8\textwidth]{cow.png}
       
-      \vspace{0.5cm}
-      \small \textit{A cow entity is composed of multiple components that define its data}
+\resizebox{7cm}{!}{
+  \begin{tikzpicture}[
+    node distance=0.4cm and 2cm,
+    class/.style={rectangle, draw, fill=blue!10, minimum width=2.5cm, minimum height=1.2cm, align=center, font=\small},
+    arrow/.style={-, thick}
+  ]
+    % Entity at the left
+    \node[class, fill=blue!20] (entity) {\textbf{Entity}\\ID: 42};
+    
+    % Vertical line from entity
+    \draw (entity.east) -- ++(0.5,0) coordinate (branch);
+    
+    % Components on the right
+    \node[class, fill=green!20, right=1.5cm of entity, yshift=1.5cm] (cow) {\textbf{Cow}};
+    \node[class, fill=green!20, right=1.5cm of entity, yshift=0.5cm] (health) {\textbf{Health}\\HP: 100};
+    \node[class, fill=green!20, right=1.5cm of entity, yshift=-0.5cm] (sprite) {\textbf{Sprite}\\texture};
+    \node[class, fill=green!20, right=1.5cm of entity, yshift=-1.5cm] (location) {\textbf{Transform}\\position};
+    
+    % Tree-style connections
+    \draw (branch) |- (cow.west);
+    \draw (branch) |- (health.west);
+    \draw (branch) |- (sprite.west);
+    \draw (branch) |- (location.west);
+  \end{tikzpicture}
+}
     \end{column}
   \end{columns}
 \end{frame}
-
 
 
 \subsection{Bevy's Rendering Pipeline}
@@ -306,10 +264,7 @@
   \end{itemize}
 \end{frame}
 
-
 \section{Building a simple game with Bevy.}
-
-
 
 \begin{frame}{Introduction Slide}
   \frametitle{What is this presentation about?}
