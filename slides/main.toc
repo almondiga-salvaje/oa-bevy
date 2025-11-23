@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{What is Bevy?}{2}{0}{1}
+\beamer@sectionintoc {2}{Why use Bevy for game development?}{4}{0}{2}
+\beamer@sectionintoc {3}{How does Bevy works?}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{ECS Architecture}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Bevy's Rendering Pipeline}{13}{0}{3}
+\beamer@sectionintoc {4}{Building a simple game with Bevy.}{14}{0}{4}
+\beamer@sectionintoc {5}{Bevy Basics}{16}{0}{5}
+\beamer@sectionintoc {6}{Core Content}{17}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{20}{0}{7}

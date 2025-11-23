@@ -1,0 +1,8 @@
+\frametitle{Code Example}
+\frametitle{Showing Off Some Code}
+  % The 'fragile' option is needed for frames with verbatim content like code.
+  \begin{minted}{rust}
+fn main() {
+    println!("Hello, Beamer!");
+}
+  \end{minted}
