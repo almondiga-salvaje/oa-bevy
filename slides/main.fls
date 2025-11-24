@@ -533,9 +533,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
-INPUT ./main.toc
-INPUT ./main.toc
-INPUT main.toc
 INPUT ./receta-queso-gouda.jpg
 INPUT ./receta-queso-gouda.jpg
 INPUT ./receta-queso-gouda.jpg

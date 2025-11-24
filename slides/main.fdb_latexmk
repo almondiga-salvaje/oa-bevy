@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764010008.64689 "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" "main.pdf" "main" 1764010011.85958 0
-  "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" 1764010008.42939 17232 829a122313e1d80d01ee8647c5d6cf91 ""
+["pdflatex"] 1764017447.64001 "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" "main.pdf" "main" 1764017450.58933 0
+  "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" 1764017447.06391 16987 e3a83d8cf0d111de01a7f602138af2e1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -236,12 +236,12 @@
   "cow.png" 1763920535.65726 50290 1406f14aec3af4c597032c80541de05a ""
   "fuet.jpeg" 1764009154.08137 10936 3c2c754342c5476c3d28505c00043da1 ""
   "godot-logo.png" 1763931073.91512 30056 9a2f2774ada549b5b62a83570164e60c ""
-  "main.aux" 1764010011.77469 9030 758dd7fcb6f24953bcf5443cf06ba74a "pdflatex"
-  "main.nav" 1764010011.77615 5809 2199c29f0fd7de0107434084a257f2b0 "pdflatex"
-  "main.out" 1764010011.77593 2631 7c3d1acc44bd962adfd833e2e7c80ab0 "pdflatex"
-  "main.tex" 1764010008.42939 17232 829a122313e1d80d01ee8647c5d6cf91 ""
-  "main.toc" 1764010011.77627 883 43ad17680bab4ca2b27ddc2b1227a6fd "pdflatex"
-  "main.vrb" 1764010011.52348 321 f4ba7dea1a49ab5916b8489836c35931 "pdflatex"
+  "main.aux" 1764017450.50842 8429 9d45b6f7720853d8be9ef6f999d6ab94 "pdflatex"
+  "main.nav" 1764017450.50964 5422 c5484bf377fe79d9774ec1be647141ac "pdflatex"
+  "main.out" 1764017450.50945 2407 cc9ce5764df7b079acc72a37df3bb235 "pdflatex"
+  "main.tex" 1764017447.06391 16987 e3a83d8cf0d111de01a7f602138af2e1 ""
+  "main.toc" 1764017450.50976 813 ebcb3fea7bf1d31329e2d79eabf7e506 "pdflatex"
+  "main.vrb" 1764017450.33263 321 f4ba7dea1a49ab5916b8489836c35931 "pdflatex"
   "pipelined-rendering.png" 1764007499.7931 79629 a6e191b1bcf2efe48d3a487a6904e0f6 ""
   "receta-queso-gouda.jpg" 1764009140.13637 15394 d547e87a03113b7893c2f290125b2839 ""
   "unity-logo.png" 1763931097.8613 15610 3a39fc784cca20fb856753337149b349 ""

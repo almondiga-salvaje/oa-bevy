@@ -9,5 +9,4 @@
 \beamer@subsectionintoc {3}{6}{How to access Resources and Components in Systems?}{21}{0}{3}
 \beamer@subsectionintoc {3}{7}{Spawning Entities with Components}{24}{0}{3}
 \beamer@sectionintoc {4}{Building a simple game with Bevy.}{27}{0}{4}
-\beamer@sectionintoc {5}{Building a simple game with Bevy.}{29}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{31}{0}{6}
+\beamer@sectionintoc {5}{Conclusion}{29}{0}{5}
