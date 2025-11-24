@@ -38,41 +38,55 @@
 \headcommand {\slideentry {3}{2}{4}{13/13}{Imagine that you have a cow (Conceptual Example)}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\beamer@subsectionpages {10}{13}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{14}{Bevy's Rendering Pipeline}}
-\headcommand {\slideentry {3}{3}{1}{14/14}{Bevy's Rendering Pipeline}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{14}{How Entitis Work in Bevy?}}
+\headcommand {\slideentry {3}{3}{1}{14/14}{How Entitis Work in Bevy?}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{3}{2}{15/15}{Bevy's Rendering Pipeline}{0}}
+\headcommand {\slideentry {3}{3}{2}{15/15}{How Entitis Work in Bevy?}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {7}{15}}
 \headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\sectionentry {4}{Building a simple game with Bevy.}{16}{Building a simple game with Bevy.}{0}}
-\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{16}{Bevy's Rendering Pipeline}}
+\headcommand {\slideentry {3}{4}{1}{16/16}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {4}{0}{2}{17/17}{}{0}}
+\headcommand {\slideentry {3}{4}{2}{17/17}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@sectionpages {16}{17}}
-\headcommand {\beamer@subsectionpages {16}{17}}
-\headcommand {\sectionentry {5}{Bevy Basics}{18}{Bevy Basics}{0}}
-\headcommand {\slideentry {5}{0}{1}{18/18}{}{0}}
+\headcommand {\slideentry {3}{4}{3}{18/18}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@sectionpages {18}{18}}
-\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\sectionentry {6}{Core Content}{19}{Core Content}{0}}
-\headcommand {\slideentry {6}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@subsectionpages {16}{18}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{19}{Resources and Components}}
+\headcommand {\slideentry {3}{5}{1}{19/19}{Resources and Components}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {6}{0}{2}{20/20}{}{0}}
+\headcommand {\slideentry {3}{5}{2}{20/20}{Resources and Components}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {6}{0}{3}{21/21}{}{0}}
+\headcommand {\beamer@sectionpages {7}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\sectionentry {4}{Building a simple game with Bevy.}{21}{Building a simple game with Bevy.}{0}}
+\headcommand {\slideentry {4}{0}{1}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@sectionpages {19}{21}}
-\headcommand {\beamer@subsectionpages {19}{21}}
-\headcommand {\sectionentry {7}{Conclusion}{22}{Conclusion}{0}}
-\headcommand {\slideentry {7}{0}{1}{22/22}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {7}{0}{2}{23/23}{}{0}}
+\headcommand {\beamer@sectionpages {21}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\sectionentry {5}{Bevy Basics}{23}{Bevy Basics}{0}}
+\headcommand {\slideentry {5}{0}{1}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@partpages {1}{23}}
-\headcommand {\beamer@subsectionpages {22}{23}}
-\headcommand {\beamer@sectionpages {22}{23}}
-\headcommand {\beamer@documentpages {23}}
-\headcommand {\gdef \inserttotalframenumber {23}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\sectionentry {6}{Core Content}{24}{Core Content}{0}}
+\headcommand {\slideentry {6}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {6}{0}{2}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {6}{0}{3}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@sectionpages {24}{26}}
+\headcommand {\beamer@subsectionpages {24}{26}}
+\headcommand {\sectionentry {7}{Conclusion}{27}{Conclusion}{0}}
+\headcommand {\slideentry {7}{0}{1}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {7}{0}{2}{28/28}{}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@partpages {1}{28}}
+\headcommand {\beamer@subsectionpages {27}{28}}
+\headcommand {\beamer@sectionpages {27}{28}}
+\headcommand {\beamer@documentpages {28}}
+\headcommand {\gdef \inserttotalframenumber {28}}

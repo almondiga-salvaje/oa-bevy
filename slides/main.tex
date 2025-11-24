@@ -29,7 +29,7 @@
                       % This requires the 'pygments' Python package to be installed.
                       % You may need to compile with the -shell-escape flag (e.g., pdflatex -shell-escape main.tex)
 \usepackage{hyperref}
-
+\usetikzlibrary{calc}
 % --------------------------------------------------------------------
 % PRESENTATION METADATA
 % --------------------------------------------------------------------
@@ -163,6 +163,7 @@
 \end{frame}
 
 \subsection{Imagine that you have a cow (Conceptual Example)}
+% imagina que tu madre se queda sin dientes i viene juanxu i te dice, una cumbia?
 \begin{frame}
   \includegraphics[width=0.4\textwidth]{cow.png} % Placeholder for an image illustrating ECS  
 \end{frame}
@@ -215,7 +216,7 @@
 
 \begin{frame}
   \frametitle{ECS Approach}
-  \framesubtitle{Nice and Clean Composition}
+  \framesubtitle{Nice GIGACHAT and Clean Composition}
   \begin{columns}[c]
     \begin{column}{0.4\textwidth}
       \centering
@@ -254,18 +255,133 @@
 \end{frame}
 
 
+\subsection{How Entitis Work in Bevy?}
+\begin{frame}{How Entities Work in Bevy}
+  \frametitle{Entities in Bevy}
+  
+  \begin{center}
+    \begin{tikzpicture}[
+      entity/.style={rectangle, draw, fill=blue!20, minimum width=1cm, minimum height=1cm},
+      component/.style={rectangle, draw, fill=green!20, minimum width=2.5cm, minimum height=0.8cm, align=center, font=\small},
+      arrow/.style={->, >=stealth, thick, red}
+    ]
+      % Vertical Array of entities
+      \node[entity] (e0) at (0,0) {0};
+      \node[entity] (e1) at (0,-1.1) {1};
+      \node[entity] (e2) at (0,-2.2) {2};
+      \node[entity] (e3) at (0,-3.3) {3};
+      \node[entity] (e4) at (0,-4.4) {4};
+      
+      % Label for the array
+      \node[above=0.3cm of e0] {\textbf{Entity Array}};
+      
+      % Components stacked vertically on the right
+      \node[component] (position) at (5,-0.5) {\textbf{Position}\\x: 10, y: 5};
+      \node[component] (cow) at (5,-1.7) {\textbf{Cow}};
+      \node[component] (player) at (5,-2.9) {\textbf{Player}\\input};
+      \node[component] (sprite) at (5,-4.1) {\textbf{Sprite}\\texture};
+      
+      % Arrows from components to entity 2
+      \coordinate (branch) at (1.5,-2.2);
+      \draw[arrow] (position.west) -| (branch) -- (e2.east);
+      \draw[arrow] (cow.west) -| (branch) -- (e2.east);
+      \draw[arrow] (player.west) -| (branch) -- (e2.east);
+      \draw[arrow] (sprite.west) -| (branch) -- (e2.east);
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+
 \subsection{Bevy's Rendering Pipeline}
 \begin{frame}{Bevy's Rendering Pipeline}
   \frametitle{Rendering in Bevy}
+  
+  \begin{center}
+    \scriptsize For more info check \href{https://bevy-cheatbook.github.io/gpu/intro.html}{https://bevy-cheatbook.github.io/gpu/intro.html}
+  \end{center}
+  
+  \begin{center}
+    \resizebox{\textwidth}{!}{
+    \begin{tikzpicture}[
+      node distance=1cm,
+      block/.style={rectangle, draw, fill=blue!10, minimum width=3cm, minimum height=1.5cm, align=center, rounded corners, font=\small},
+      arrow/.style={->, >=stealth, very thick}
+    ]
+      % Nodes
+      \node[block, fill=green!20] (main) {\textbf{Main World}\\\scriptsize Game Logic};
+      \node[block, right=of main] (extract) {\textbf{Render World}\\\scriptsize Extracted Data};
+      \node[block, right=of extract] (prepare) {\textbf{Render Graph}\\\scriptsize Prepare \& Queue};
+      \node[block, fill=orange!20, right=of prepare] (gpu) {\textbf{GPU}\\\scriptsize wgpu Execution};
+      
+      % Arrows
+      \draw[arrow] (main) -- node[above, font=\tiny] {Extract} (extract);
+      \draw[arrow] (extract) -- (prepare);
+      \draw[arrow] (prepare) -- (gpu);
+      
+      % Frame for CPU vs GPU
+      \draw[dashed, gray] ($(main.north west)+(-0.2,0.5)$) rectangle ($(prepare.south east)+(0.2,-0.5)$);
+      \node[above, gray] at ($(extract.north)+(0,0.6)$) {CPU Parallel Stages};
+      
+    \end{tikzpicture}
+    }
+  \end{center}
+  
+  \vspace{0.3cm}
   \begin{itemize}
-    \item Bevy uses a modern rendering pipeline based on wgpu.
-    \item Supports both 2D and 3D graphics.
-    \item Provides built-in shaders and materials.
+    \item \textbf{Pipelined}: Rendering logic runs in parallel with the next frame's game logic.
+    \item \textbf{wgpu}: Modern backend supporting Vulkan, Metal, DX12, and WebGPU.
+    \item \textbf{Render Graph}: Modular and customizable rendering passes.
   \end{itemize}
 \end{frame}
 
-\section{Building a simple game with Bevy.}
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[at=(current page.center)] {
+      \includegraphics[width=\paperwidth, height=\paperheight]{pipelined-rendering.png}
+    };
+  \end{tikzpicture}
+\end{frame}
 
+\subsection{Resources and Components}
+\begin{frame}{Resources and Components in Bevy}
+  \frametitle{Resources vs Components}
+  
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \centering
+      \colorbox{green!20}{\parbox{0.9\textwidth}{
+        \centering
+        \textbf{\large Components}\\[0.2cm]
+        \small Data attached to entities
+      }}
+      \vspace{0.3cm}
+      \begin{itemize}
+        \item Attached to specific entities
+        \item Multiple instances exist
+        \item Defines object properties
+        \item Examples: Position, Health, Sprite
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.48\textwidth}
+      \centering
+      \colorbox{orange!20}{\parbox{0.9\textwidth}{
+        \centering
+        \textbf{\large Resources}\\[0.2cm]
+        \small Global unique data
+      }}
+      \vspace{0.3cm}
+      \begin{itemize}
+        \item Accessible by all systems
+        \item Only one instance exists
+        \item Defines world state
+        \item Examples: Time, Score, AssetServer
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Building a simple game with Bevy.}
 \begin{frame}{Introduction Slide}
   \frametitle{What is this presentation about?}
   So lets beging with an overview for what we can expect from this presentation.
@@ -325,3 +441,5 @@ fn main() {
 \end{frame}
 
 \end{document}
+
+

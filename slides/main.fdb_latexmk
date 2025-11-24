@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1763933259.18611 "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" "main.pdf" "main" 1763933261.96667 0
-  "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" 1763933259.00664 11612 f9d8fb1aee01670873dc567f0dafb520 ""
+["pdflatex"] 1764008294.85265 "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" "main.pdf" "main" 1764008297.81449 0
+  "/Users/mrt/Documents/bevy/oa-meet/slides/main.tex" 1764008297.39137 15976 7539f71c292612a7dc2ef3c63e785d19 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -65,6 +65,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1601326656 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1673816307 22012 81b34a0aa8fa1a6158cc6220b00e4f10 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1601326656 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex" 1601326656 15929 463535aa2c4268fead6674a75c0e8266 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex" 1601326656 3937 3f208572dd82c71103831da976d74f1a ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex" 1608933718 11518 738408f795261b70ce8dd47459171309 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex" 1673816307 186782 af500404a9edec4d362912fe762ded92 ""
@@ -229,12 +230,13 @@
   "bevy_logo.png" 1763916480.93891 7517 9c678a06ae5a6721e0701d5356aaf402 ""
   "cow.png" 1763920535.65726 50290 1406f14aec3af4c597032c80541de05a ""
   "godot-logo.png" 1763931073.91512 30056 9a2f2774ada549b5b62a83570164e60c ""
-  "main.aux" 1763933261.88803 6614 e1ce763a5395ddf12d9c3f9637a30521 "pdflatex"
-  "main.nav" 1763933261.8893 4182 1c08713e4fad81eaa94acc93fed314f6 "pdflatex"
-  "main.out" 1763933261.88896 1672 57e1dbfe67f5bc19bb76d88414544979 "pdflatex"
-  "main.tex" 1763933259.00664 11612 f9d8fb1aee01670873dc567f0dafb520 ""
-  "main.toc" 1763933261.88956 606 972b1aef4579c64c854735cbe7e38f07 "pdflatex"
-  "main.vrb" 1763933261.17833 224 e5f7e0a5ceed54250e45dc3c7d5d759b "pdflatex"
+  "main.aux" 1764008297.73479 7919 73e41c0e190f78a2b7af630c4b469815 "pdflatex"
+  "main.nav" 1764008297.736 5020 35d4433b5d6535f3352154f78a4faab3 "pdflatex"
+  "main.out" 1764008297.73582 2053 9940455b7702a7bb0b27886b5f6ca8e3 "pdflatex"
+  "main.tex" 1764008297.39137 15976 7539f71c292612a7dc2ef3c63e785d19 ""
+  "main.toc" 1764008297.73609 741 f4356c8f83a7742fdd57c4a6b9c4fcee "pdflatex"
+  "main.vrb" 1764008296.99088 224 e5f7e0a5ceed54250e45dc3c7d5d759b "pdflatex"
+  "pipelined-rendering.png" 1764007499.7931 79629 a6e191b1bcf2efe48d3a487a6904e0f6 ""
   "unity-logo.png" 1763931097.8613 15610 3a39fc784cca20fb856753337149b349 ""
   "unreal-engine-logo.png" 1763931115.88113 20730 706e01346a0aee58a95148a023fb2809 ""
   (generated)

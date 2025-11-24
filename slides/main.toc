@@ -3,8 +3,10 @@
 \beamer@sectionintoc {3}{How does Bevy works?}{7}{0}{3}
 \beamer@subsectionintoc {3}{1}{ECS Architecture}{8}{0}{3}
 \beamer@subsectionintoc {3}{2}{Imagine that you have a cow (Conceptual Example)}{10}{0}{3}
-\beamer@subsectionintoc {3}{3}{Bevy's Rendering Pipeline}{14}{0}{3}
-\beamer@sectionintoc {4}{Building a simple game with Bevy.}{16}{0}{4}
-\beamer@sectionintoc {5}{Bevy Basics}{18}{0}{5}
-\beamer@sectionintoc {6}{Core Content}{19}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{22}{0}{7}
+\beamer@subsectionintoc {3}{3}{How Entitis Work in Bevy?}{14}{0}{3}
+\beamer@subsectionintoc {3}{4}{Bevy's Rendering Pipeline}{16}{0}{3}
+\beamer@subsectionintoc {3}{5}{Resources and Components}{19}{0}{3}
+\beamer@sectionintoc {4}{Building a simple game with Bevy.}{21}{0}{4}
+\beamer@sectionintoc {5}{Bevy Basics}{23}{0}{5}
+\beamer@sectionintoc {6}{Core Content}{24}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{27}{0}{7}

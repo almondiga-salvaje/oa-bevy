@@ -338,6 +338,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./main.aux
@@ -465,6 +467,17 @@ INPUT ./cow.png
 INPUT ./cow.png
 INPUT ./cow.png
 INPUT ./cow.png
+INPUT ./main.toc
+INPUT ./main.toc
+INPUT main.toc
+INPUT ./main.toc
+INPUT ./main.toc
+INPUT main.toc
+INPUT ./pipelined-rendering.png
+INPUT ./pipelined-rendering.png
+INPUT ./pipelined-rendering.png
+INPUT ./pipelined-rendering.png
+INPUT ./pipelined-rendering.png
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
