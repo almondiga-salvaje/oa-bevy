@@ -1,5 +1,18 @@
 I have a dream of sharing my ideas and knowledge to my coworkers
 
+# Installation
+
+```bash
+# https://rust-lang.org/learn/get-started/ 
+# install crate (rust package manager)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# install rust analyzer on vscode 
+# https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+
+cargo run
+```
+
 # Bevy Cheatsheet
 
 Quick reference snippets from [Bevy Cheatbook](https://bevy-cheatbook.github.io/)

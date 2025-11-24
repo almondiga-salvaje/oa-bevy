@@ -1,12 +1,12 @@
 \beamer@sectionintoc {1}{What is Bevy?}{2}{0}{1}
-\beamer@sectionintoc {2}{Why use Bevy for game development?}{4}{0}{2}
-\beamer@sectionintoc {3}{How does Bevy works?}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{ECS Architecture}{8}{0}{3}
-\beamer@subsectionintoc {3}{2}{Imagine that you have a cow (Conceptual Example)}{10}{0}{3}
-\beamer@subsectionintoc {3}{3}{How Entitis Work in Bevy?}{14}{0}{3}
-\beamer@subsectionintoc {3}{4}{Bevy's Rendering Pipeline}{16}{0}{3}
-\beamer@subsectionintoc {3}{5}{Resources and Components}{19}{0}{3}
-\beamer@subsectionintoc {3}{6}{How to access Resources and Components in Systems?}{21}{0}{3}
-\beamer@subsectionintoc {3}{7}{Spawning Entities with Components}{24}{0}{3}
-\beamer@sectionintoc {4}{Building a simple game with Bevy.}{27}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{29}{0}{5}
+\beamer@sectionintoc {2}{Why use Bevy for game development?}{5}{0}{2}
+\beamer@sectionintoc {3}{How does Bevy works?}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{ECS Architecture}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Imagine that you have a cow (Conceptual Example)}{11}{0}{3}
+\beamer@subsectionintoc {3}{3}{How Entitis Work in Bevy?}{15}{0}{3}
+\beamer@subsectionintoc {3}{4}{Bevy's Rendering Pipeline}{17}{0}{3}
+\beamer@subsectionintoc {3}{5}{Resources and Components}{20}{0}{3}
+\beamer@subsectionintoc {3}{6}{How to access Resources and Components in Systems?}{22}{0}{3}
+\beamer@subsectionintoc {3}{7}{Spawning Entities with Components}{25}{0}{3}
+\beamer@sectionintoc {4}{Building a simple game with Bevy.}{28}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{30}{0}{5}

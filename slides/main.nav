@@ -7,88 +7,90 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@sectionpages {2}{3}}
-\headcommand {\beamer@subsectionpages {2}{3}}
-\headcommand {\sectionentry {2}{Why use Bevy for game development?}{4}{Why use Bevy for game development?}{0}}
-\headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
+\headcommand {\slideentry {1}{0}{3}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {2}{0}{2}{5/5}{}{0}}
+\headcommand {\beamer@sectionpages {2}{4}}
+\headcommand {\beamer@subsectionpages {2}{4}}
+\headcommand {\sectionentry {2}{Why use Bevy for game development?}{5}{Why use Bevy for game development?}{0}}
+\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {4}{6}}
-\headcommand {\beamer@subsectionpages {4}{6}}
-\headcommand {\sectionentry {3}{How does Bevy works?}{7}{How does Bevy works?}{0}}
-\headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{ECS Architecture}}
-\headcommand {\slideentry {3}{1}{1}{8/8}{ECS Architecture}{0}}
+\headcommand {\beamer@sectionpages {5}{7}}
+\headcommand {\beamer@subsectionpages {5}{7}}
+\headcommand {\sectionentry {3}{How does Bevy works?}{8}{How does Bevy works?}{0}}
+\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {3}{1}{2}{9/9}{ECS Architecture}{0}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{ECS Architecture}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{ECS Architecture}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionpages {8}{9}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{10}{Imagine that you have a cow (Conceptual Example)}}
-\headcommand {\slideentry {3}{2}{1}{10/10}{Imagine that you have a cow (Conceptual Example)}{0}}
+\headcommand {\slideentry {3}{1}{2}{10/10}{ECS Architecture}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{2}{2}{11/11}{Imagine that you have a cow (Conceptual Example)}{0}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Imagine that you have a cow (Conceptual Example)}}
+\headcommand {\slideentry {3}{2}{1}{11/11}{Imagine that you have a cow (Conceptual Example)}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{2}{3}{12/12}{Imagine that you have a cow (Conceptual Example)}{0}}
+\headcommand {\slideentry {3}{2}{2}{12/12}{Imagine that you have a cow (Conceptual Example)}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{2}{4}{13/13}{Imagine that you have a cow (Conceptual Example)}{0}}
+\headcommand {\slideentry {3}{2}{3}{13/13}{Imagine that you have a cow (Conceptual Example)}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionpages {10}{13}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{14}{How Entitis Work in Bevy?}}
-\headcommand {\slideentry {3}{3}{1}{14/14}{How Entitis Work in Bevy?}{0}}
+\headcommand {\slideentry {3}{2}{4}{14/14}{Imagine that you have a cow (Conceptual Example)}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{3}{2}{15/15}{How Entitis Work in Bevy?}{0}}
+\headcommand {\beamer@subsectionpages {11}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{15}{How Entitis Work in Bevy?}}
+\headcommand {\slideentry {3}{3}{1}{15/15}{How Entitis Work in Bevy?}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{16}{Bevy's Rendering Pipeline}}
-\headcommand {\slideentry {3}{4}{1}{16/16}{Bevy's Rendering Pipeline}{0}}
+\headcommand {\slideentry {3}{3}{2}{16/16}{How Entitis Work in Bevy?}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{4}{2}{17/17}{Bevy's Rendering Pipeline}{0}}
+\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{17}{Bevy's Rendering Pipeline}}
+\headcommand {\slideentry {3}{4}{1}{17/17}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{4}{3}{18/18}{Bevy's Rendering Pipeline}{0}}
+\headcommand {\slideentry {3}{4}{2}{18/18}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionpages {16}{18}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{19}{Resources and Components}}
-\headcommand {\slideentry {3}{5}{1}{19/19}{Resources and Components}{0}}
+\headcommand {\slideentry {3}{4}{3}{19/19}{Bevy's Rendering Pipeline}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{5}{2}{20/20}{Resources and Components}{0}}
+\headcommand {\beamer@subsectionpages {17}{19}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{20}{Resources and Components}}
+\headcommand {\slideentry {3}{5}{1}{20/20}{Resources and Components}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@subsectionpages {19}{20}}
-\headcommand {\beamer@subsectionentry {0}{3}{6}{21}{How to access Resources and Components in Systems?}}
-\headcommand {\slideentry {3}{6}{1}{21/21}{How to access Resources and Components in Systems?}{0}}
+\headcommand {\slideentry {3}{5}{2}{21/21}{Resources and Components}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {3}{6}{2}{22/22}{How to access Resources and Components in Systems?}{0}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{22}{How to access Resources and Components in Systems?}}
+\headcommand {\slideentry {3}{6}{1}{22/22}{How to access Resources and Components in Systems?}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {3}{6}{3}{23/23}{How to access Resources and Components in Systems?}{0}}
+\headcommand {\slideentry {3}{6}{2}{23/23}{How to access Resources and Components in Systems?}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@subsectionpages {21}{23}}
-\headcommand {\beamer@subsectionentry {0}{3}{7}{24}{Spawning Entities with Components}}
-\headcommand {\slideentry {3}{7}{1}{24/24}{Spawning Entities with Components}{0}}
+\headcommand {\slideentry {3}{6}{3}{24/24}{How to access Resources and Components in Systems?}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{7}{2}{25/25}{Spawning Entities with Components}{0}}
+\headcommand {\beamer@subsectionpages {22}{24}}
+\headcommand {\beamer@subsectionentry {0}{3}{7}{25}{Spawning Entities with Components}}
+\headcommand {\slideentry {3}{7}{1}{25/25}{Spawning Entities with Components}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {3}{7}{3}{26/26}{Spawning Entities with Components}{0}}
+\headcommand {\slideentry {3}{7}{2}{26/26}{Spawning Entities with Components}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\beamer@sectionpages {7}{26}}
-\headcommand {\beamer@subsectionpages {24}{26}}
-\headcommand {\sectionentry {4}{Building a simple game with Bevy.}{27}{Building a simple game with Bevy.}{0}}
-\headcommand {\slideentry {4}{0}{1}{27/27}{}{0}}
+\headcommand {\slideentry {3}{7}{3}{27/27}{Spawning Entities with Components}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {4}{0}{2}{28/28}{}{0}}
+\headcommand {\beamer@sectionpages {8}{27}}
+\headcommand {\beamer@subsectionpages {25}{27}}
+\headcommand {\sectionentry {4}{Building a simple game with Bevy.}{28}{Building a simple game with Bevy.}{0}}
+\headcommand {\slideentry {4}{0}{1}{28/28}{}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@sectionpages {27}{28}}
-\headcommand {\beamer@subsectionpages {27}{28}}
-\headcommand {\sectionentry {5}{Conclusion}{29}{Conclusion}{0}}
-\headcommand {\slideentry {5}{0}{1}{29/29}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {5}{0}{2}{30/30}{}{0}}
+\headcommand {\beamer@sectionpages {28}{29}}
+\headcommand {\beamer@subsectionpages {28}{29}}
+\headcommand {\sectionentry {5}{Conclusion}{30}{Conclusion}{0}}
+\headcommand {\slideentry {5}{0}{1}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@partpages {1}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@sectionpages {29}{30}}
-\headcommand {\beamer@documentpages {30}}
-\headcommand {\gdef \inserttotalframenumber {30}}
+\headcommand {\slideentry {5}{0}{2}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@partpages {1}{31}}
+\headcommand {\beamer@subsectionpages {30}{31}}
+\headcommand {\beamer@sectionpages {30}{31}}
+\headcommand {\beamer@documentpages {31}}
+\headcommand {\gdef \inserttotalframenumber {31}}

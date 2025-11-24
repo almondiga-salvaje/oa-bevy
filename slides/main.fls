@@ -396,6 +396,7 @@ INPUT ./bevy_logo.png
 INPUT ./bevy_logo.png
 INPUT ./bevy_logo.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
@@ -447,7 +448,6 @@ INPUT main.toc
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT ./main.toc
