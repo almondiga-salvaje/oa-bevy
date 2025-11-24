@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{use}\PYG{+w}{ }\PYG{n}{bevy}\PYG{p}{::}\PYG{n}{prelude}\PYG{p}{:}\PYG{p}{:}\PYG{o}{*}\PYG{p}{;}
+\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{my\PYGZus{}system}\PYG{p}{(}
+\PYG{+w}{    }\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{query}\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{Query}\PYG{o}{\PYGZlt{}}\PYG{o}{\PYGZam{}}\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{Transform}\PYG{o}{\PYGZgt{}}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Access Components}
+\PYG{+w}{    }\PYG{n}{time}\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{Res}\PYG{o}{\PYGZlt{}}\PYG{n}{Time}\PYG{o}{\PYGZgt{}}\PYG{p}{,}\PYG{+w}{                  }\PYG{c+c1}{// Access Resource}
+\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{transform}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{query}\PYG{p}{.}\PYG{n}{iter\PYGZus{}mut}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{transform}\PYG{p}{.}\PYG{n}{translation}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{time}\PYG{p}{.}\PYG{n}{delta\PYGZus{}seconds}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mf}{100.0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

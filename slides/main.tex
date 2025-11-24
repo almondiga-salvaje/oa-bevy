@@ -381,54 +381,90 @@
   \end{columns}
 \end{frame}
 
-\section{Building a simple game with Bevy.}
-\begin{frame}{Introduction Slide}
-  \frametitle{What is this presentation about?}
-  So lets beging with an overview for what we can expect from this presentation.
-  
-  \begin{itemize}
-    \item What is Bevy?
-    \item Why use Bevy for game development?
-    \item How does bevy works?
-    \item Building a simple game with Bevy.
-  \end{itemize}
+
+\subsection{How to access Resources and Components in Systems?}
+
+\begin{frame}[fragile]{Organizing Code}
+  \frametitle{Creating a Plugin}     
+  \begin{minted}[fontsize=\small]{rust}
+use bevy::prelude::*;
+
+#[derive(Resource, Default)]
+struct Score(u32);
+
+pub struct GamePlugin;
+
+impl Plugin for GamePlugin {
+    fn build(&self, app: &mut App) {
+        app.init_resource::<Score>()
+           .add_systems(Startup, setup)
+           .add_systems(Update, update_score);
+    }
+}
+
+fn setup() { println!("Game Started"); }
+fn update_score(mut score: ResMut<Score>) { score.0 += 1; }
+  \end{minted}
 \end{frame}
 
-
-\section{Bevy Basics}
-
-
-\section{Core Content}
-
-\begin{frame}{A Slide with Columns}
-  \frametitle{Two-Column Layout}
-  
-  \begin{columns}[T] % T aligns columns at the top
-    \begin{column}{0.5\textwidth}
-      \textbf{Left Column}
-      \begin{itemize} 
-
-        \item Perfect for placing text next to an image or a chart.
-        \item This column takes up 50% of the text width.
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      \textbf{Right Column}
-      %\p{\includegraphics[width=\textwidth]{placeholder.png}} % Placeholder for an image
-      \centering \footnotesize{Remember to add an image named 'placeholder.png' in your project directory.}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Code Example}
-  \frametitle{Showing Off Some Code}
-  % The 'fragile' option is needed for frames with verbatim content like code.
-  \begin{minted}{rust}
-fn main() {
-    println!("Hello, Beamer!");
+\begin{frame}[fragile]{Accessing Resources and Components in Systems}
+  \frametitle{Bevy System Parameters}     
+  \begin{minted}[fontsize=\small]{rust}
+use bevy::prelude::*;
+fn my_system(
+    mut query: Query<&mut Transform>, // Access Components
+    time: Res<Time>,                  // Access Resource
+) {
+    for mut transform in query.iter_mut() {
+        transform.translation.x += time.delta_seconds() * 100.0;
+    }
 }
   \end{minted}
 \end{frame}
+
+% spawn entities
+\subsection{Spawning Entities with Components}
+\begin{frame}[fragile]{Spawning Entities with Components}
+  \frametitle{Creating Entities in Bevy}     
+  \begin{minted}[fontsize=\small]{rust}
+use bevy::prelude::*;
+fn spawn_entity(mut commands: Commands) {
+    commands.spawn((
+        Transform::default(),
+        Sprite::default(),
+        Health(100),
+    ));
+}
+  \end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Spawning Entities with Components}
+  \frametitle{Querying Entities in Bevy with some logic}     
+  \begin{minted}[fontsize=\small]{rust}
+fn query_enemies(query: Query<Entity, (With<Health>, Without<Cow>)>) {
+    for enemy in query.iter() {
+        println!("Found enemy entity: {:?}", enemy);
+    }
+}
+  \end{minted}
+\end{frame}
+
+\section{Building a simple game with Bevy.}
+\begin{frame}
+  \frametitle{Building a Simple Game with Bevy}
+  \begin{center}
+    \Huge The Adventures of Ketamine the Cow
+  \end{center}
+\end{frame}
+
+\section{Building a simple game with Bevy.}
+% only a name, no code needed
+\begin{frame}
+  \frametitle{Building a Simple Game with Bevy}
+  \begin{center}
+    \Huge The Adventures of Ketamine the Cow
+  \end{center}
+\end{frame}  
 
 \section{Conclusion}
 
@@ -436,9 +472,27 @@ fn main() {
   \frametitle{Thank You!}
   
   \begin{center}
-    \Huge Questions?
+    \Huge Q\&A
+  \end{center}
+  
+  \vspace{0.5cm}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{receta-queso-gouda.jpg}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{fuet.jpeg}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.3cm}
+  \begin{center}
+    \Large Queso y Ambutido
   \end{center}
 \end{frame}
+
 
 \end{document}
 

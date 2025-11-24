@@ -1,0 +1,19 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{use}\PYG{+w}{ }\PYG{n}{bevy}\PYG{p}{::}\PYG{n}{prelude}\PYG{p}{:}\PYG{p}{:}\PYG{o}{*}\PYG{p}{;}
+
+\PYG{c+cp}{\PYGZsh{}[}\PYG{c+cp}{derive(Resource, Default)}\PYG{c+cp}{]}
+\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Score}\PYG{p}{(}\PYG{k+kt}{u32}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{GamePlugin}\PYG{p}{;}
+
+\PYG{k}{impl}\PYG{+w}{ }\PYG{n}{Plugin}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{GamePlugin}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{build}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{app}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kp}{\PYGZam{}}\PYG{n+nc}{mut}\PYG{+w}{ }\PYG{n}{App}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{app}\PYG{p}{.}\PYG{n}{init\PYGZus{}resource}\PYG{p}{:}\PYG{p}{:}\PYG{o}{\PYGZlt{}}\PYG{n}{Score}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{p}{)}
+\PYG{+w}{           }\PYG{p}{.}\PYG{n}{add\PYGZus{}systems}\PYG{p}{(}\PYG{n}{Startup}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{setup}\PYG{p}{)}
+\PYG{+w}{           }\PYG{p}{.}\PYG{n}{add\PYGZus{}systems}\PYG{p}{(}\PYG{n}{Update}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{update\PYGZus{}score}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{setup}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nf+fm}{println!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Game Started}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{update\PYGZus{}score}\PYG{p}{(}\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{score}\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{ResMut}\PYG{o}{\PYGZlt{}}\PYG{n}{Score}\PYG{o}{\PYGZgt{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{score}\PYG{p}{.}\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

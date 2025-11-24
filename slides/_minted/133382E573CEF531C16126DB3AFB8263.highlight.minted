@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{use}\PYG{+w}{ }\PYG{n}{bevy}\PYG{p}{::}\PYG{n}{prelude}\PYG{p}{:}\PYG{p}{:}\PYG{o}{*}\PYG{p}{;}
+\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{spawn\PYGZus{}entity}\PYG{p}{(}\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{commands}\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{Commands}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{commands}\PYG{p}{.}\PYG{n}{spawn}\PYG{p}{(}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{Transform}\PYG{p}{::}\PYG{n}{default}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Sprite}\PYG{p}{::}\PYG{n}{default}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Health}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{)}\PYG{p}{,}
+\PYG{+w}{    }\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

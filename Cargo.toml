@@ -13,3 +13,4 @@ opt-level = 3
 
 [dependencies]
 bevy = "0.17" # make sure this is the latest version
+rand = "0.9.2"

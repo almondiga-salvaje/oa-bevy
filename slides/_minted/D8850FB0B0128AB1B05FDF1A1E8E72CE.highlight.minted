@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{fn}\PYG{+w}{ }\PYG{n+nf}{query\PYGZus{}enemies}\PYG{p}{(}\PYG{n}{query}\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{Query}\PYG{o}{\PYGZlt{}}\PYG{n}{Entity}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{With}\PYG{o}{\PYGZlt{}}\PYG{n}{Health}\PYG{o}{\PYGZgt{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Without}\PYG{o}{\PYGZlt{}}\PYG{n}{Cow}\PYG{o}{\PYGZgt{}}\PYG{p}{)}\PYG{o}{\PYGZgt{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{enemy}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{query}\PYG{p}{.}\PYG{n}{iter}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nf+fm}{println!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Found enemy entity: \PYGZob{}:?\PYGZcb{}}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{enemy}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

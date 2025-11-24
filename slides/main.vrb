@@ -1,8 +1,9 @@
-\frametitle{Code Example}
-\frametitle{Showing Off Some Code}
-  % The 'fragile' option is needed for frames with verbatim content like code.
-  \begin{minted}{rust}
-fn main() {
-    println!("Hello, Beamer!");
+\frametitle{Spawning Entities with Components}
+\frametitle{Querying Entities in Bevy with some logic}
+  \begin{minted}[fontsize=\small]{rust}
+fn query_enemies(query: Query<Entity, (With<Health>, Without<Cow>)>) {
+    for enemy in query.iter() {
+        println!("Found enemy entity: {:?}", enemy);
+    }
 }
   \end{minted}
